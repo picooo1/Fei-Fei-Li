@@ -147,6 +147,7 @@
     transform: translate(-42%);
     width: max-content;
     z-index: 100;
+    margin-bottom: 150px;
   }
   
   .carousel .slide {
@@ -166,3 +167,70 @@
   .carousel .slide:nth-child(2) { 
     margin-top: -100px; 
   }
+  .text-box-container {
+    width: 500px;
+    height:300px;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    margin-top: 10%;
+    margin-left: 30%;
+    justify-content: space-between;
+    padding: 0 50px; /* Ensures padding does not affect the spacing between boxes */
+}
+
+.text-box {
+    flex-grow: 1; /* Each box will take up equal space */
+    text-align: center; /* Center the text inside each box */
+    padding: 10px; /* Padding inside each text box */
+}
+
+#left-box {
+    margin-right: 50px; /* Space between the left box and the middle box */
+}
+
+#right-box {
+    margin-left: 50px; /* Space between the right box and the middle box */
+}
+  #close{
+    display: none;
+  }
+  #menu{
+    display: none;
+  }
+  
+  
+  
+  @media(max-width: 700px)
+  {
+  #close{
+  display:block;
+  color:#000000;
+  font-size: 20px;
+  margin: 10px;
+  cursor:pointer;
+  
+}
+#menu{
+  display:block;
+  color:#000000;
+  font-size: 20px;
+  margin: 5px;
+  cursor:pointer;
+  
+}
+.carousel {
+    margin-bottom: 50px; /* Reduced space on smaller screens */
+}
+.text-box-container {
+    flex-direction: column; /* Stack the boxes vertically on smaller screens */
+    padding: 0 20px;
+}
+.text-box {
+    margin-bottom: 20px; /* Space between the boxes when stacked */
+}
+#left-box, #right-box {
+    margin-right: 0;
+    margin-left: 0;
+}
+}
