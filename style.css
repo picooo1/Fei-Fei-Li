@@ -155,6 +155,10 @@ padding-top: 3%;
  
 
 }
+.img-box:hover {
+  transform: scale(1.05); /* Slightly enlarges the image box on hover */
+  opacity: 70%;
+}
 .img-box h1{
   Color:white;
   position:absolute;
