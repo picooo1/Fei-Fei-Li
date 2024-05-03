@@ -68,14 +68,42 @@
         </section>
 
         <div class="text-box-container">
-            <div class="text-box" id="left-box">Left Text Content</div>
-            <div class="text-box" id="middle-box">Middle Text Content</div>
-            <div class="text-box" id="right-box">Right Text Content</div>
-        </div>
-        <div class="text-box-container">
-            <div class="text-box" id="left-box">Left Text Content</div>
-            <div class="text-box" id="middle-box">Middle Text Content</div>
-            <div class="text-box" id="right-box">Right Text Content</div>
+            <div class="text-box" id="left-box">
+                <div class="text-details2">
+<div class="large">5570</div>
+<div class="small">Undergraduate Enrollment</div>
+                </div>
+            </div>
+            <div class="text-box" id="middle-box">
+                <div class="number-animation">0</div>
+                <div class="text-details">
+                    <div class="text-small">of 14,131</div>
+                    <div class="text-large">in the World</div>
+                </div>
+          
+            <div class="text-box" id="right-box">
+                <div class="text-details3">
+                    <div class="large2">$72,000+</div>
+                    <div class="small2">Average annual
+                        undergraduate aid package</div>
+            </div>
         </div>
     </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const elem = document.querySelector('#middle-box .number-animation');
+            let count = 0;
+            const targetCount = 29;
+            const duration = 2000; // Duration in milliseconds
+            const stepTime = Math.abs(Math.floor(duration / targetCount));
+            
+            const counter = setInterval(() => {
+                count++;
+                elem.textContent = count;
+                if (count === targetCount) {
+                    clearInterval(counter);
+                }
+            }, stepTime);
+        });
+    </script>
 </html>

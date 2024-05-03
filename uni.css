@@ -156,7 +156,7 @@
     flex-shrink: 0;
     position: relative;
   }
-  isfjwihfhwa
+ 
   .carousel .slide img {
     width: 150%;
     height: 150%;
@@ -168,30 +168,97 @@
     margin-top: -100px; 
   }
   .text-box-container {
-    width: 500px;
+    width: auto;
     height:300px;
     align-items: center;
-    align-content: center;
+   
     display: flex;
-    margin-top: 10%;
-    margin-left: 30%;
-    justify-content: space-between;
+    margin-top: 15%;
+    margin-left: 18%;
+    margin-right: 18%;
+    justify-content: center;
     padding: 0 50px; /* Ensures padding does not affect the spacing between boxes */
 }
 
 .text-box {
-    flex-grow: 1; /* Each box will take up equal space */
-    text-align: center; /* Center the text inside each box */
-    padding: 10px; /* Padding inside each text box */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between the number and the details */
+    align-items: center; /* Align items vertically in the center */
+    width: 100%; /* Take full width of the container */
+  text-align: center;
+    padding: 10px ;
+    flex: 1;
+    margin: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-right: 30%;
+
+}
+
+.number-animation {
+    font-size: 80px;
+    font-weight: bold;
+    color: #000;
+    flex: 0 0 auto;
+  padding-left: 10%;
+    
+}
+.text-details {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    text-align: left;/* Align the texts to the right */
+    flex: 1; /* Take remaining space */
+   
+}
+.text-details .text-small, .text-details .text-large {
+    white-space: nowrap;  
+    flex: 0 0 auto;  
+    padding-left: 10PX;
+}
+.text-details .text-small {
+    font-size: 20px;
+    font-weight: 300; /* Light style */
+    
+}
+
+.text-details .text-large {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 #left-box {
-    margin-right: 50px; /* Space between the left box and the middle box */
+ /* Space between the left box and the middle box */
+    margin-top:100px ;
 }
-
+.text-details2 {
+text-align: center;
+white-space: nowrap;
+}
+.large {
+    font-size: 50px;
+    font-weight: bold;
+}
+.small{
+    font-size: 20px;
+    font-weight: lighter;
+}
 #right-box {
-    margin-left: 50px; /* Space between the right box and the middle box */
+    margin-left: 30%;
+    margin-top: 100px; /* Space between the right box and the middle box */
 }
+.text-details3 {
+    text-align: center;
+    white-space: nowrap;
+    }
+    .large2 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .small2{
+        font-size: 20px;
+        font-weight: lighter;
+    }
   #close{
     display: none;
   }
