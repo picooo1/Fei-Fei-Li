@@ -141,9 +141,11 @@
   .carousel {
     display: flex;
     gap: 130px;
-    position:absolute; 
+    position:relative; 
+    
     bottom: 80px;
     left: 42%; 
+    align-items: center;
     transform: translate(-42%);
     width: max-content;
     z-index: 100;
@@ -163,6 +165,35 @@
     object-fit: cover;
     display: block;
   }
+  
+  .carousel-navigation {
+    position: absolute; /* Positions relative to the slide container */
+    bottom: 40px; /* Adjust distance from the bottom of the slide */
+    width: 100%; /* Ensures the navigation spans the width of the slide */
+    display: block;
+    justify-content: center; 
+    align-items: center;/* Distributes space between left and right buttons */
+   margin-top: 10px;
+  padding-left: 30px;
+       /* Space between buttons */
+}
+
+.carousel-control {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  padding: 10px 15px;
+  text-decoration: none; /* Removes underline from links */
+  color: #333; /* Text color */
+  display: inline-block;
+}
+
+
+
+.carousel-control i {
+    font-size: 20px;         /* Adjust icon size */
+    color: #333;             /* Icon color */
+}
   
   .carousel .slide:nth-child(2) { 
     margin-top: -100px; 

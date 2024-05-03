@@ -1,0 +1,220 @@
+@font-face{
+    font-family: 'Montserrat';
+    src:url(fonts/Montserrat-VariableFont_wght.ttf)
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: #000000;
+  }
+  
+  .header{
+    min-height: 10vh;
+    width:100%
+  }
+  nav.fa{
+    display:none;
+    color: transparent;
+  }
+  nav{
+    display: flex;
+    padding:  2% 3%;
+    height: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:white;
+   background-color: white;
+   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3), 0 0 0 rgba(0, 0, 0, 0.1) inset;
+   z-index: -1;
+    bottom:0;
+  }
+  
+  .shadow::before,
+  .shadow::after {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba (0,0,0,0.8);
+    top: 50%;
+    bottom:0;
+  
+  }
+  nav img{
+    width: 120px;
+    
+    }
+    .nav-links{
+        flex: 1;
+        text-align: center;
+    }
+    .nav-links ul li{
+        list-style: none;
+        display:inline-block;
+        padding: 3px 12px;
+        position: relative;
+        font-weight: lighter;
+    }
+    
+  
+  
+  .nav-links ul li a{
+    color: #000000;
+  text-decoration: none;
+  font-size: 15px;
+  }
+  .nav-links ul li.dropdown .dropdown-menu  {
+    background: white;
+    position:absolute;
+    z-index: 999;
+    display: none;
+    width: 150px;
+   left: 40%;
+   transform: translateX(-50%);
+   text-align: left;
+   padding-top: 20%;
+  }
+  .nav-links ul li.dropdown:hover .dropdown-menu{
+    display: block;
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .nav-links ul li:hover::after{
+  width: 100%
+  }
+  #banner {
+    position: relative;
+  }
+  
+  .PrincetonBanner{
+    width: 100%;
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+  }
+  .PrincetonBanner img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .PrincetonBannerCover{
+    position: absolute; 
+    top: 0px; 
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+   z-index: 2;
+  }
+  
+    .PrincetonBannerCover img {
+        width: 100%;
+        height: 350px;
+        display: block;
+        object-fit: cover;
+        position: relative;  /* Ensures the image can be positioned relative if needed */
+        z-index: 0;  /* Keeps the image below the overlay */
+      }
+  
+  
+      .carousel {
+        display: flex;
+        gap: 130px;
+        position:relative; 
+        
+        bottom: 80px;
+        left: 42%; 
+        align-items: center;
+        transform: translate(-42%);
+        width: max-content;
+        z-index: 100;
+        margin-bottom: 150px;
+      }
+      
+      .carousel .slide {
+        width: 200px;
+        height: 260px;
+        flex-shrink: 0;
+        position: relative;
+      }
+     
+      .carousel .slide img {
+        width: 150%;
+        height: 150%;
+        object-fit: cover;
+        display: block;
+      }
+      
+      .carousel-navigation {
+        position: absolute; /* Positions relative to the slide container */
+        bottom: 40px; /* Adjust distance from the bottom of the slide */
+        width: 100%; /* Ensures the navigation spans the width of the slide */
+        display: block;
+        justify-content: center; 
+        align-items: center;/* Distributes space between left and right buttons */
+       margin-top: 10px;
+      padding-left: 30px;
+           /* Space between buttons */
+    }
+    
+    .carousel-control {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      padding: 10px 15px;
+      text-decoration: none; /* Removes underline from links */
+      color: #333; /* Text color */
+      display: inline-block;
+    }
+    
+    
+    
+    .carousel-control i {
+        font-size: 20px;         /* Adjust icon size */
+        color: #333;             /* Icon color */
+    }
+  .carousel .slide:nth-child(2) { 
+    margin-top: -100px; 
+  }
+  
+  #close{
+    display: none;
+  }
+  #menu{
+    display: none;
+  }
+  
+  
+  
+  @media(max-width: 700px)
+  {
+  #close{
+  display:block;
+  color:#000000;
+  font-size: 20px;
+  margin: 10px;
+  cursor:pointer;
+  
+}
+#menu{
+  display:block;
+  color:#000000;
+  font-size: 20px;
+  margin: 5px;
+  cursor:pointer;
+  
+}
+.carousel {
+    margin-bottom: 50px; /* Reduced space on smaller screens */
+}
+  }
