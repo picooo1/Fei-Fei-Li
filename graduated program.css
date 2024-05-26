@@ -198,144 +198,138 @@
   .carousel .slide:nth-child(2) { 
     margin-top: -100px; 
   }
-  .text-box-container {
-    width: auto;
-    height:300px;
-    align-items: center;
-   
-    display: flex;
-    margin-top: 5%;
-    margin-left: 18%;
-    margin-right: 18%;
-    justify-content: center;
-    padding: 0 50px; /* Ensures padding does not affect the spacing between boxes */
-}
+ 
 
-.text-box {
-    display: flex; /* Flexbox layout */
-    justify-content: space-between; /* Space between the number and the details */
-    align-items: center; /* Align items vertically in the center */
-    width: 100%; /* Take full width of the container */
-  text-align: center;
-    padding: 10px ;
-    flex: 1;
-    margin: 0 20px;
-    text-align: center;
-    box-sizing: border-box;
-    margin-right: 10%;
-margin-bottom: 30%;
-
-}
-
-.number-animation {
-    font-size: 80px;
-    font-weight: bold;
-    color: #000;
-    flex: 0 0 auto;
-  padding-left: 10%;
-    
-}
-.text-details {
-    display: flex;
-    flex-direction: column;
-    align-items: left; 
-    text-align: left;/* Align the texts to the right */
-    flex: 1; /* Take remaining space */
-   
-}
-.text-details .text-small, .text-details .text-large {
-    white-space: nowrap;  
-    flex: 0 0 auto;  
-    padding-left: 10PX;
-}
-.text-details .text-small {
-    font-size: 20px;
-    font-weight: 300; /* Light style */
-    
-}
-
-.text-details .text-large {
-    font-size: 30px;
-    font-weight: bold;
-}
-
-#left-box {
- /* Space between the left box and the middle box */
-    margin-top:150px ;
-    
-}
-.text-details2 {
-text-align: center;
-white-space: nowrap;
-}
-.large {
-    font-size: 50px;
-    font-weight: bold;
-}
-.small{
-    font-size: 20px;
-    font-weight: lighter;
-}
-#right-box {
-    margin-left: 10%;
-    margin-top: 350px; /* Space between the right box and the middle box */
-}
-.text-details3 {
-    text-align: center;
-    white-space: nowrap;
-    }
-    .large2 {
-        font-size: 50px;
-        font-weight: bold;
-    }
-    .small2{
-        font-size: 20px;
-        font-weight: lighter;
-    }
-    .info-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin: 50px 5%;
-      padding-left: 5%;
-      position: relative;
-      overflow: hidden;
-    }
-    .info-text h2{
-      text-align: left;
-      font-size: 40px;
-      font-family: 'Montserrat';
-      font-weight: bold;
-     
-    }
-    
-    .info-text p {
-      font-family: 'Montserrat';
-      font-weight: normal;
-      margin: 20px 0px 30px;
-      font-size: 20px;
-      text-align:justify;
-      padding-right: 20%;
-      
-    }
-      .info-image img {
-       /* Ensure image doesn't exceed container width */
-        height: auto;/* Maintain aspect ratio */
-        width: 586px;
-        padding-top: 50px;
-        padding-right: 10%;
-    }
-    
-  #close{
+#close{
     display: none;
   }
   #menu{
     display: none;
   }
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 200px 5%;
+    padding-left: 5%;
+    position: relative;
+    overflow: hidden;
+  }
+
   
+  .info-left, .info-right {
+    width: 45%;
+  }
   
+  .info-left img {
+    display: block;
+    width: 100%;
+    margin-top: 250px;
+    height: 50%;
+  }
   
-  @media(max-width: 700px)
+  .info-left h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding-left: 5%;
+  }
+  
+  .info-left p {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    margin: 20px 0px 30px;
+    font-size: 20px;
+    text-align: justify;
+  }
+  .bubble-container {
+    position: relative;
+    width: 708px;
+    height: 436px;
+    position: relative;
+    overflow: hidden;
+  }
+    .bubble {
+        position: absolute;
+        border-radius: 64% 69% 74% 63%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+      }
+      
+      .bubble h1 {
+        font-size: 40px;
+        padding-top: 30px;
+        margin: -30px;
+        color: #000000;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .bubble p {
+        font-size: 16px;
+        color: #000000;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      /* Bubble 1 */
+      .bubble:nth-child(1) {
+        width: 230px;
+        height: 230px;
+        top: 30px;
+        left: 130px;
+        background: radial-gradient(circle, rgba(225, 240, 239, 0.5), rgba(187, 193, 198, 0.5));
+      }
+      
+      /* Bubble 2 */
+      .bubble:nth-child(2) {
+        width: 220px;
+        height: 220px;
+        top: 150px;
+        right: 210px;
+        background: radial-gradient(circle, rgba(228, 235, 241, 0.5), rgba(132, 136, 139, 0.5));
+      }
+      
+      /* Bubble 3 */
+      .bubble:nth-child(3) {
+        width: 200px;
+        height: 200px;
+        bottom: 0px;
+        left: 120px;
+        background: radial-gradient(circle, rgba(223, 230, 239, 0.5), rgba(163, 177, 198, 0.5));
+      }
+      
+      /* Text stability */
+      .info-container {
+        position: relative;
+        overflow: hidden;
+      }
+  
+  .info-right{
+    padding-right: 5%;
+  }
+  .info-right h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding-right: 5%;
+    padding-top: 20%;
+  }
+  
+  .info-right p {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    margin: 20px 0px 30px;
+    font-size: 20px;
+    text-align: justify;
+  }
+@media(max-width: 700px)
   {
   #close{
   display:block;
@@ -356,15 +350,34 @@ white-space: nowrap;
 .carousel {
     margin-bottom: 50px; /* Reduced space on smaller screens */
 }
-.text-box-container {
-    flex-direction: column; /* Stack the boxes vertically on smaller screens */
-    padding: 0 20px;
-}
-.text-box {
-    margin-bottom: 20px; /* Space between the boxes when stacked */
-}
-#left-box, #right-box {
-    margin-right: 0;
-    margin-left: 0;
-}
-}
+
+.info-container {
+    flex-direction: column;
+    align-items: center;
+ 
+  }
+
+  .info-left, .info-right {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .text-box {
+    margin-bottom: 20px;
+  }
+  }
+  
+  .bubble:hover {
+    transform: scale(1.2); /* Increase size on hover */
+    transition: transform 0.5s ease; /* Smooth transition */
+  }
+  
+  @keyframes waterAnimation {
+    0% {
+      background-position: 0 0; /* Start position of background */
+    }
+    100% {
+      background-position: 100% 0; /* End position of background */
+    }
+  }
+  
+  

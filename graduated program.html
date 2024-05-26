@@ -7,7 +7,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Fei Fei Li web site</title>
-      <link rel="stylesheet" type="text/css" href="uni.css" href="Montserrat-VariableFont_wght.ttf" href="Montserrat-Regular.ttf" href="Montserrat-SemiBold.ttf">
+      <link rel="stylesheet" type="text/css" href="graduated program.css" href="Montserrat-VariableFont_wght.ttf" href="Montserrat-Regular.ttf" href="Montserrat-SemiBold.ttf">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     </head>
 
@@ -39,7 +39,7 @@
 
             <div id="banner"> 
               <div class="PrincetonBanner">
-              <img src="images/Rectangle 21.png" alt="">
+              <img src="images/graduated school banner.png" alt="">
               </div>
               
               <div class="PrincetonBannerCover">
@@ -47,7 +47,7 @@
               </div>
 
               <div class="PrincetonBannerLogo">
-              <img src="images/logo-white.svg" alt="">
+              <img src="" alt="">
               </div>
             </div>
  
@@ -57,12 +57,13 @@
               </div>
 
               <div class="slide">
-                <img src="images/bachelor.png" alt="">  <a href="school.html" class="carousel-control left"><i class="fa fa-chevron-left"></i></a>
-        <a href="" class="carousel-control right"><i class="fa fa-chevron-right"></i></a>
-              </div>
+                <img src="images/graduated.png" alt=""> 
+              <a href="school.html" class="carousel-control left"><i class="fas fa-chevron-left"></i></a>
+                <a href="uni.html" class="carousel-control right"><i class="fas fa-chevron-right"></i></a>
+            </div>
 
               <div class="slide">
-                <img src="images/graduated.png" alt=""> 
+                <img src="images/bachelor.png" alt=""> 
               </div>
               <div class="carousel-navigation">
                
@@ -70,44 +71,35 @@
             </div>
             </div>
         </section>
-
-        <div class="text-box-container">
-            <div class="text-box" id="left-box">
-                <div class="text-details2">
-<div class="large">5570</div>
-<div class="small">Undergraduate Enrollment</div>
-                </div>
+        <section class="info-container">
+            <div class="info-left">
+                <h1>California Institute <br>
+                    of Technology</h1>
+                <p>The California Institute of Technology (branded as Caltech) is a private research university in Pasadena, California. The university is responsible for many modern scientific advancements and is among a small group of institutes of technology in the United States which are strongly devoted to the instruction of pure and applied sciences. Due to its history of technological innovation, Caltech has been considered to be one of the world's most prestigious universities.</p>
+              <img src="images/graduate program img.png" alt="Sample Photo">
             </div>
-            <div class="text-box" id="middle-box">
-                <div class="number-animation">0</div>
-                <div class="text-details">
-                    <div class="text-small">of 14,131</div>
-                    <div class="text-large">in the World</div>
-                </div>
-          
-            <div class="text-box" id="right-box">
-                <div class="text-details3">
-                    <div class="large2">$72,000+</div>
-                    <div class="small2">Average annual
-                        undergraduate aid package</div>
+            <div class="info-right">
+                <div class="bubble-container">
+                    <div class="bubble">
+                      <h1>558</h1>
+                      <p>Postdoctoral
+                        <br>scholars</p>
+                    </div>
+                    <div class="bubble">
+                      <h1>46</h1>
+                      <p>Nobel<br>Laureates</p>
+                    </div>
+                    <div class="bubble">
+                      <h1>323</h1>
+                      <p>Professional <br> facility</p>
+                    </div>
+                  </div>
+                  <h1> Postgraduate program</h1>
+              <p>Li then pursued graduate studies at the California Institute of Technology, where she received a Doctor of Philosophy in electrical engineering in 2005. Li completed her dissertation, titled "Visual Recognition: Computational Models and Human Psychophysics," under the primary supervision of Pietro Perona and secondary supervision of Christof Koch. Her graduate studies were supported by the National Science Foundation Graduate Research Fellowship and The Paul & Daisy Soros Fellowships for New Americans.</p>
             </div>
-        </div>
+          </section>
+        </body>
+        
     </body>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const elem = document.querySelector('#middle-box .number-animation');
-            let count = 0;
-            const targetCount = 29;
-            const duration = 2000; // Duration in milliseconds
-            const stepTime = Math.abs(Math.floor(duration / targetCount));
-            
-            const counter = setInterval(() => {
-                count++;
-                elem.textContent = count;
-                if (count === targetCount) {
-                    clearInterval(counter);
-                }
-            }, stepTime);
-        });
-    </script>
+   
 </html>

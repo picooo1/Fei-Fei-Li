@@ -186,6 +186,67 @@
   .carousel .slide:nth-child(2) { 
     margin-top: -100px; 
   }
+  .info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   margin-left: 29%;
+    
+  
+  }
+  .info-text h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+   
+  }
+  
+  .info-text p {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    margin: 20px 0px 30px;
+    font-size: 20px;
+    text-align:center;
+  }
+
+  .info-container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 200px 5%;
+    padding-left: 5%;
+    
+  
+  }
+  .info-left, .info-right {
+    width: 45%;
+  }
+  .info-left h1{
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+   
+  }
+  
+  .info-right p{
+     font-family: 'Montserrat';
+  font-weight: normal;
+  margin: 20px 0px 30px;
+  font-size: 20px;
+  text-align:left;
+    font-family: 'Montserrat';
+    font-weight: normal;
+    margin: 20px 0px 30px;
+    font-size: 20px;
+  }
+  .info-left img {
+    display: block;
+    width: 100%;
+    margin-top: 100px;
+    height: 100%;
+  }
   
   #close{
     display: none;
