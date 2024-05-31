@@ -1,0 +1,270 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <script>
+            function scrollToSection(sectionId) {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Fei Fei Li web site</title>
+      <link rel="stylesheet" type="text/css" href="work.css" href="Montserrat-VariableFont_wght.ttf" href="Montserrat-Regular.ttf" href="Montserrat-SemiBold.ttf">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+      <style>
+        /* Add smooth scrolling behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    </head>
+
+    <body>
+        <section class="header">
+            <nav>
+              <a href="Page 2 Website.html"> <img src="logo.png" alt=""></a>
+              
+              <div class="nav-links" id="navLinks">
+                 <i class="fa-solid fa-xmark" id="close" onclick="hideMenu()"></i>
+                <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li class="dropdown">
+                    <a href="#">EDUCATION</a>
+                <ul class="dropdown-menu">
+               <li><a href="school.html">General Education</a></li>
+                      <li><a href="uni.html">Bachelor Program</a></li>
+                      <li><a href="graduated program.html">Graduated Program</a></li>
+                </ul>
+                    </li>
+                    <li><a href="">WORK</a></li>
+                    <li><a href="">HONORS AND AWARDS</a></li>
+                    <li><a href="">PUBLISHMENT</a></li>
+                </ul>
+              </div>
+              
+              <i class="fa fa-bars" id="menu" onclick="showMenu()"></i>
+            </nav>
+            <div class="banner">
+                <div class="Banner">
+                    <img src="images/banner1st.png" alt="">
+                </div>
+                <div class="Image">
+                    <img src="images/m.png" alt="">
+                </div>
+                <div class="text">
+                <img src="images/heading text.png" alt="">
+                </div>
+            </div>
+            <section class="card_design" id="card-container">
+                <div class="container">
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <img src="images/wrok1.png" alt="" onclick="scrollToSection('early-career-container')">
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <div class="content">
+                                <img src="images/work1 back.png" alt="" onclick="scrollToSection('early-career-container')">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <img src="images/work2.png" alt="" onclick="scrollToSection('stanford-work-container')">> 
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <div class="content">
+                                <img src="images/work2 back.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <img src="images/work3.png" alt="">
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <div class="content">
+                                <img src="images/work3 back.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="face front">
+                            <div class="content">
+                                <img src="images/work4.png" alt="">
+                            </div>
+                        </div>
+                        <div class="face back">
+                            <div class="content">
+                                <img src="images/work4 back.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="information-container">
+                <div class="left-text">
+                    <p>" I imagine a world in <br>which AI is going to make <br>us work more<br> productively, live longer,<br> and have cleaner energy "</p>
+                </div>
+                <div class="right-text">
+                    <p>Dr. Li has been working with policymakers nationally and locally to <br> ensure the responsible use of technologies, including a number of <br> U.S. Senate and Congressional testimonies, her service as <br> a special advisor to the Secretary General of the United Nations, a <br>member of the California Future of Work Commission for the <br> Governor of California in 2019 - 2020, and a member of the <br> National Artificial Intelligence Research Resource Task Force <br> (NAIRR) for the White House Office of Science and Technology <br> Policy (OSTP) and the National Science Foundation (NSF) <br> in 2021-2022. Dr.<br><br>
+                         Li is an elected Member of the National Academy of Engineering <br> (NAE), the National Academy of Medicine (NAM) and American <br>Academy of Arts and Sciences (AAAS).</p>
+                </div>
+                <div class="image-boxes">
+                    <div class="image-box">
+                        <img src="images/text box 1.png" alt="">
+                    </div>
+                    <div class="image-box">
+                        <img src="images/text box 2.png" alt="">
+                    </div>
+                    <div class="image-box">
+                        <img src="images/text box 3.png" alt="">
+                    </div>
+                    <div class="image-box">
+                        <img src="images/text box 4.png" alt="">
+                    </div>
+                    <div class="image-box">
+                        <img src="images/text box 5.png" alt="">
+                    </div>
+                    <div class="image-box">
+                        <img src="images/text box 6.png" alt="">
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="early-career-container" id="early-career-container">
+                <div class="early-career-text">
+                    <h2>EARLY CAREER</h2>
+                    <p>From 2005 to 2006, Li was an assistant professor in the <br> Electrical and Computer Engineering Department at <br>the University of Illinois Urbana-Champaign, and from <br> 2007 to 2009, she was an assistant professor in the <br> Computer Science Department at Princeton University. </p>
+                </div>
+                <div class="early-career-images">
+                    <div class="image-container">
+                        <img src="images/uni of illinous.png" alt="Early Career Image 1">
+                        <div class="image-subtitle">University of Illinois Urbana-Champaign</div>
+                        <div class="button-container">
+                            <button onclick="redirectToWebsite('https://illinois.edu/')">→</button>
+                        </div>
+                    </div>
+                
+                    <div class="image-container">
+                        <img src="images/princeton.png" alt="Early Career Image 2">
+                        <div class="image-subtitle">Princeton University</div>
+                        <div class="button-container">
+                            <button onclick="redirectToWeb('https://www.princeton.edu/')">→</button>
+                        </div>
+                    </div>
+                     </section>
+                     <section class="stanford-cover-container" id="stanford-cover-container">
+                        <div class="banner">
+                            <img src="images/stanford.png" alt="Stanford Cover Image">
+                            <div class="banner-text">
+                                <p>AI is <span class="highlight">everywhere.</span><br>It's not that big,<br> scary thing in <br>the future. AI is <br>here with <span class="highlight">us.</span></p>
+                            </div>
+                        </div>
+                    </section>
+                     <section class="stanford-work-container" id="stanford-work-container">
+                        <div class="stanford-career-text">
+                                <h2>STANFORD<br>UNIVERSITY</h2>
+                                <p>Fei-Fei Li is a Professor at Stanford University, where she has served for over 15 years. She was the Director of the Stanford Artificial Intelligence Laboratory (SAIL) from 2013 to 2020, leading pioneering research in AI and mentoring numerous students. Her work at Stanford has significantly advanced the field of AI and established the university as a leader in AI research and education.</p>
+                            </div>
+                        <div class="top-row">   
+                            <div class="stanford-experience-boxes">
+                                <div class="experience-box">
+                                    <img src="images/director.png" alt="Box 1">
+                                </div>
+                                <div class="experience-box">
+                                    <img src="images/assistant professor.png" alt="Box 2">
+                                </div>
+                            </div>
+                         
+                        </div>
+                        <div class="bottom-row stanford-experience-boxes">
+                            <div class="experience-box">
+                                <img src="images/co-director.png" alt="Box 3">
+                            </div>
+                            <div class="experience-box">
+                                <img src="images/full professor.png" alt="Box 4">
+                            </div>
+                            <div class="experience-box">
+                                <img src="images/co-founder, co-director.png" alt="Box 5">
+                            </div>
+                        </div>
+                    </section>
+                <script>
+                    function redirectToWebsite(url) {
+    window.location.href = url;
+}
+function redirectToWeb(url) {
+    window.location.href = url;
+}
+                    function scrollToSection(sectionId) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+        const targetOffset = section.offsetTop; // Get the offset of the target section
+        const initialOffset = window.pageYOffset; // Get the current scroll position
+
+        // Calculate the distance and direction to scroll
+        const distance = targetOffset - initialOffset;
+        const direction = distance > 0 ? 1 : -1;
+
+        // Set the duration and interval for smooth scrolling
+        const duration = 500; // Adjust as needed for desired duration (in milliseconds)
+        const interval = 10; // Interval for each scroll step (in milliseconds)
+        const step = distance / (duration / interval); // Calculate the distance to scroll each step
+
+        // Define the function for scrolling each step
+        const scrollStep = () => {
+            // Update the current scroll position
+            const currentPosition = window.pageYOffset;
+
+            // Determine if the scroll should continue
+            if ((direction === 1 && currentPosition < targetOffset) || (direction === -1 && currentPosition > targetOffset)) {
+                // Scroll to the next position
+                window.scrollBy(0, step);
+
+                // Call scrollStep recursively after the interval
+                setTimeout(scrollStep, interval);
+            } else {
+                // Scroll to the exact target position to ensure accuracy
+                window.scrollTo(0, targetOffset);
+            }
+        };
+
+        // Start the scrolling process
+        scrollStep();
+    }
+}
+            
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const boxes = document.querySelectorAll('.image-box');
+            
+                        const observer = new IntersectionObserver((entries, observer) => {
+                            entries.forEach(entry => {
+                                if (entry.isIntersecting) {
+                                    entry.target.classList.add('visible');
+                                    observer.unobserve(entry.target);
+                                }
+                            });
+                        }, {
+                            threshold: 0.6
+                        });
+            
+                        boxes.forEach(box => {
+                            observer.observe(box);
+                        });
+                    });
+                </script>
+            </body>
+           
+</html>

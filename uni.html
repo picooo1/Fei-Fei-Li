@@ -28,7 +28,7 @@
                       <li><a href="graduated program.html">Graduated Program</a></li>
                 </ul>
                     </li>
-                    <li><a href="">WORK</a></li>
+                    <li><a href="work.html">WORK</a></li>
                     <li><a href="">HONORS AND AWARDS</a></li>
                     <li><a href="">PUBLISHMENT</a></li>
                 </ul>
@@ -106,6 +106,17 @@
       
     </body>
     <script>
+      var navLinks= document.getElementById("navLinks")
+      function showMenu(){
+        navLinks.style.right ="0";
+      
+      }
+      function hideMenu(){
+        navLinks.style.right="-230px";
+      }
+     </script>
+    <script>
+      
         document.addEventListener('DOMContentLoaded', function() {
             const elem = document.querySelector('#middle-box .number-animation');
             let count = 0;

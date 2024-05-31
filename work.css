@@ -1,0 +1,475 @@
+@font-face{
+    font-family: 'Montserrat';
+    src:url(fonts/Montserrat-VariableFont_wght.ttf)
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: #000000;
+  }
+  
+  .header{
+    min-height: 10vh;
+    width:100%
+  }
+  nav.fa{
+    display:none;
+    color: transparent;
+  }
+  nav{
+    display: flex;
+    padding:  2% 3%;
+    height: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:white;
+   background-color: white;
+   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3), 0 0 0 rgba(0, 0, 0, 0.1) inset;
+   z-index: -1;
+    
+  }
+  
+  .shadow::before,
+  .shadow::after {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0 0 20px rgba (0,0,0,0.8);
+    top: 50%;
+    bottom:0;
+  
+  }
+  nav img{
+    width: 120px;
+    
+    }
+    .nav-links{
+        flex: 1;
+        text-align: center;
+    }
+    .nav-links ul li{
+        list-style: none;
+        display:inline-block;
+        padding: 3px 12px;
+        position: relative;
+        font-weight: lighter;
+    }
+    
+  
+  
+  .nav-links ul li a{
+    color: #000000;
+  text-decoration: none;
+  font-size: 15px;
+  }
+  .nav-links ul li.dropdown .dropdown-menu  {
+    background: white;
+    position:absolute;
+    z-index: 999;
+    display: none;
+    width: 150px;
+   left: 40%;
+   transform: translateX(-50%);
+   text-align: left;
+   padding-top: 20%;
+  }
+  .nav-links ul li.dropdown:hover .dropdown-menu{
+    display: block;
+  }
+  .nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #000000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .nav-links ul li:hover::after{
+  width: 100%
+  }
+  #close{
+    display: none;
+  }
+  #menu{
+    display: none;
+  }
+  
+  .banner {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensure child elements stay within bounds */
+}
+
+.Banner img {
+    width: 100%;
+    height: 530px;
+  
+}
+
+.Image {
+    position: absolute;
+    right: -100%; /* Initially outside the viewport */
+    max-width: 100%;
+    height: 40px;
+    padding-right: 38%;
+    padding-bottom: 33%;
+    bottom: 0;
+    animation: slideFromLeft 1s forwards; /* Apply animation */
+}
+
+.text {
+    position: absolute;
+    right: 150%; /* Initially outside the viewport */
+    max-width: 300px;
+    height: 40px;
+    padding-bottom: 37%;
+    padding-right: 60%;
+    animation: slideFromRight 1s forwards; /* Apply animation */
+}
+
+.container {
+    width: 100%;
+    height: 350px;
+    /* Center the container */
+    display: flex;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.card {
+    width: 200px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 0; /* Remove spacing between cards */
+    transition: z-index 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    z-index: 10; /* Bring the hovered card in front */
+    transform: scale(1.1); /* Scale the card to 110% of its size */
+}
+
+.card:hover .front {
+    opacity: 0; /* Hide the front face */
+}
+
+.card:hover .back {
+    opacity: 1; /* Show the back face */
+}
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide back face when not visible */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    overflow: hidden;
+}
+
+.front {
+    opacity: 1; /* Front face initially visible */
+}
+
+.back {
+    opacity: 0; /* Back face initially hidden */
+    height: 100%; /* Ensure height is 100% */
+}
+
+.content img {
+    width: 100%; /* Ensure images fit within the card */
+    height: auto;
+   
+}
+.information-container {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.left-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    width: 50%;
+    font-weight: bold;
+    color: #404040;
+   padding-left: 10%;
+}
+.right-text {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15;
+  font-weight: normal;
+    width: 50%;
+    margin-top: 20px;
+    right: 0;
+    text-align: left;
+    padding-left: 20%;
+   
+}
+
+.right-text p {
+    margin: 0;
+    padding-left: 20%;
+    
+}
+.image-boxes {
+  padding-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px; /* Add padding to the container */
+  padding-left: 30%;
+}
+.image-box {
+  width: calc(33.33% - 20px); /* Adjust width to fit three boxes per row with margin */
+  margin-bottom: 20px; /* Add margin between rows */
+  margin-right: 20px; /* Add margin between columns */
+  box-sizing: border-box; /* Include padding and border in the width */
+  opacity: 0; /* Start hidden */
+  transform: translateX(-100px); /* Start position off-screen to the left */
+  transition: opacity 7s ease, transform 5s ease; /* Smooth transition */
+}
+
+.image-box img {
+  width: 250px;
+  height: 150px;
+  padding: 15px;
+}
+
+/* Class to apply the animation */
+.image-box.visible {
+  opacity: 1;
+  transform: translateX(0); /* Move to the original position */
+}
+
+
+.early-career-container {
+  width: 100%;
+  height: 450px;
+  background-color: #DCDEE0;
+  display: flex;
+  align-items: center;
+  
+}
+
+.early-career-text {
+  flex: 1; /* Take up the left side of the container */
+  font-family: 'Montserrat', sans-serif;
+  color: #404040;
+  padding-left: 10%;
+}
+
+.early-career-text h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px; /* Space between header and paragraph */
+}
+
+.early-career-text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300; /* Light font weight */
+  margin: 0;
+  
+}
+
+.early-career-images {
+  flex: 1; /* Take up the right side of the container */
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px; /* Horizontal gap between image containers */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center-align text */
+  padding-right: 10%;
+  padding-top: 20%;
+}
+
+.image-container img {
+  width: 250px;
+  height: 150px;
+  margin-bottom: 10px; /* Space between image and subtitle */
+}
+
+.image-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 600; /* Semi-bold */
+  text-align: left;
+  justify-content: left;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container button {
+  background-color: transparent;
+  border: 2px solid #404040; /* Black border */
+  border-radius: 50%; /* Circle shape */
+  width: 30px; /* Circle width */
+  height: 30px; /* Circle height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 15px;
+  color: #404040; /* Arrow color */
+  margin-top: 30px; /* Space above button */
+}
+
+.button-container button:focus {
+  outline: none; /* Remove outline on focus */
+}
+.stanford-cover-container {
+  width: 100%;
+  height: 450px; /* Same height as the early career section */
+  background-color: #F7F7F7;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align content horizontally */
+}
+
+.stanford-cover-container .banner {
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: 450px; /* Ensure the image maintains its aspect ratio */
+ 
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  padding-right: 20%;
+  text-align: left;
+}
+
+.banner-text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 600; /* Semi-bold */
+  line-height: 1.2; /* Adjust line height for better readability */
+  text-transform: uppercase;
+  color: #fff;
+}
+.banner-text .highlight {
+  color: black;
+  
+}
+.stanford-work-container {
+  width: 100%;
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between rows */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width/height */
+}
+.stanford-career-text {
+  font-family: 'Montserrat', sans-serif;
+  color: #404040;
+  justify-content: right;
+  margin-left: 20px; /* Adjust space from the left */
+  padding-left: 60%;
+}
+
+.stanford-career-text h2 {
+  font-size: 40px;
+  font-weight: 600; /* Semibold */
+  margin-bottom: 20px; /* Space between header and paragraph */
+}
+
+.stanford-career-text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300; /* Light font weight */
+  margin: 0;
+  width: 400px; /* Adjust width as needed */
+}
+
+.top-row {
+  display: flex;
+  align-items: flex-start; /* Align items to the start */
+  justify-content: space-between;
+  width: 100%;
+}
+
+.stanford-experience-boxes {
+  display: flex;
+  gap: 190px; /* Space between boxes */
+  margin: 20px;
+}
+
+.experience-box {
+  width: 280px; /* Fixed width */
+  height: 170px; /* Fixed height */
+}
+
+.experience-box img {
+  width: 280px; /* Ensure image fits within the box */
+  height: 170px; /* Ensure image fits within the box */
+}
+
+
+
+.bottom-row {
+  display: flex;
+  gap: 190px; /* Space between boxes */
+}
+@keyframes slideFromLeft {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        right: 150%;
+    }
+    100% {
+        right: 50%;
+    }
+}
+  @media(max-width: 700px)
+  {
+  #close{
+  display:block;
+  color:#000000;
+  font-size: 20px;
+  margin: 10px;
+  cursor:pointer;
+  
+}
+#menu{
+  display:block;
+  color:#000000;
+  font-size: 20px;
+  margin: 5px;
+  cursor:pointer;
+}
+  }
